@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+    }
+    .container{
+        width: 100%;
+        height: 50px;
+        background-color: blue;
+    }
+    ul{
+        margin-left: 20px;
+    }
+    ul li{
+      display: inline-block;
+      width: 150px;
+      margin-top: 10px;
+    }
+    ul li a{
+        color: white;
+        text-transform: capitalize;
+    }
+    @media screen and (max-width: 800px) {
+   ul {
+    font-size: 35px;
+  }
+
+}
+ul li a:hover{
+  color: red;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.container1{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+nav img{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+.container2{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container2 nav img{
+    border-radius: 40px;
+}
+</style>
+    <title>Flex css</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">faq</a></li>
+            <li><a href="#">courses</a></li>
+        </ul>
+    </div>
+    <div class="container1">
+        <nav>
+            <img src="https://www.shutterstock.com/image-photo/paragliding-flying-over-mont-blanc-600w-409250953.jpg" alt="kite image" title="kite image">
+            <img src="https://www.shutterstock.com/image-photo/andean-condors-flying-over-mountains-600w-1608209389.jpg" alt="">
+            <img src="https://www.shutterstock.com/image-photo/view-alps-mountains-sunset-switzerland-600w-1189082809.jpg" alt="">
+            <img src="https://media.istockphoto.com/photos/andean-condor-picture-id1018839508?k=20&m=1018839508&s=612x612&w=0&h=i8kPcpnY-LwnUbe_cNV8uRqPtUhyL4fwN_CmEFjI3bY=" alt="">
+        </nav>
+    </div>
+
+    <div class="container2">
+        <nav>
+            <img src="./chad.jpg" alt="">
+            <img src="./laptop.jpg" alt="">
+            <img src="./fortinite.jpg" alt="">
+            <img src="./tree.jpg" alt="">
+        </nav>
+    </div>
+</body>
+</html>
